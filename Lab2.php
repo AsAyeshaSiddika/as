@@ -167,9 +167,11 @@
 	<input type="text" name="zip" style="width:250px; background-color:orange" >
     <select name="country" style=" width:250px;  background-color:orange ">
     <option value="Bangladesh">Bangladesh</option>
-    <option value="India">India</option>
-    <option value="Pakisthan">Pakisthan</option>
-    <option value="Nepal">Nepal</option>
+    <option value="Japan">Japan</option>
+    <option value="Australia">Australia</option>
+    <option value="New Zealand">New Zealand</option>
+	<option value="America">America</option>
+	<option value="Bhutan">Bhutan</option>
     </select>
     <span><?php echo $countryError; ?></span>
     <br/>
