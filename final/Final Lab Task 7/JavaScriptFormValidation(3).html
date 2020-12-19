@@ -1,0 +1,41 @@
+<html>
+<head>
+</head>
+<body>
+<script>
+function myFun(){
+var b = document.getElementById("passwords").value;
+var c = document.getElementById("passwordss").value;
+
+if(b==""){
+document.getElementById("messages").innerHTML="** Please Fill Up This Field";
+return false;
+}
+if(b.length < 5){
+document.getElementById("messages").innerHTML="** Password Length Must be Greater Than 5 Characters";
+return false;
+}
+if(b.length > 30){
+document.getElementById("messages").innerHTML="** Password Length Must be Smaller Than 30 Characters";
+return false;
+}
+if(b!=c) {
+document.getElementById("messages").innerHTML="** Passwords Are Not Same";
+return false;
+}
+
+}
+
+
+
+</script>
+<h1 style="text-align:center;"> Password Validation In JavaScript </h1>
+<form onsubmit="return myFun()">
+New Password : <input type="password" id="passwords" value="">
+<span id="messages"style="color:red;">   </span><br></br>
+confirm password : <input type="password" id="passwordss" value="">
+<span id="messages"> </span><br></br>
+<input type="submit" value="Submit">
+</form>
+</body>
+</html>

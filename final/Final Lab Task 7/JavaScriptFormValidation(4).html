@@ -1,0 +1,36 @@
+<html>
+<head>
+</head>
+<body>
+<script>
+function myFun(){
+var d = document.getElementById("number").value;
+if(d==""){
+document.getElementById("messages").innerHTML="** Please fill Id";
+return false;
+}
+if(isNaN(d)){
+document.getElementById("messages").innerHTML="** Enter Numeric Value";
+return false;
+
+}
+if(d.length<10){
+document.getElementById("messages").innerHTML="** Id Must Be 10 digit";
+return false;
+}
+if(d.length>10){
+document.getElementById("messages").innerHTML="** Id Must Be 10 digit";
+return false;
+}
+}
+
+</script>
+
+<h1 style="color:blue; text-align:center;"> Id Number Validation In JavaScript </h1>
+<form onsubmit="return myFun()">
+Id : <input type="text" id="number" value="">
+<span id="messages"style="color:red;"> </span><br></br>
+<input type="submit" value="Submit">
+</form>
+</body>
+</html>
